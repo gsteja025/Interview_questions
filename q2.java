@@ -56,3 +56,23 @@ input =this-is--very---special-string
 output =THI-SISV-ERYS-PECI-ALST-RING
 
  */
+ import java.util.Arrays;
+import java.util.Scanner;
+
+public class NewKey {
+	public static String newKeyFormatting(String s, int k) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = s.length() - 1; i >= 0; i--)
+            if (s.charAt(i) != '-')
+                sb.append(sb.length() % (k + 1) == k ? '-' : "").append(s.charAt(i));
+        return sb.reverse().toString().toUpperCase();
+    } 
+	
+	 public static void main(String args[] ) {
+		 Scanner sc = new Scanner(System.in);
+			String str=sc.next();
+			int k=sc.nextInt();
+
+		    System.out.println(newKeyFormatting(str,k));
+	}
+}
