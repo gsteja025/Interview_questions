@@ -58,3 +58,31 @@ input =A BC DEF GHIJ KLMNO PQRSTU VWXYZ
 output ="ABDGKPV, CEHLQW,  FIMRX,   JNSY,    OTZ,     U"
 
  */
+ mport java.util.*;
+
+public class PrintWordsVertically {
+	
+	 public static List<String> printVertically(String s) {
+	        String[] words = s.split(" ");
+	        int mx = 0;
+	        for (int i = 0; i < words.length; ++i)
+	            mx = Math.max(mx, words[i].length());
+	        List<String> ans = new ArrayList<>();
+	        for (int i = 0; i < mx; ++i) {
+	            StringBuilder sb = new StringBuilder();
+	            for (String word : words)
+	                sb.append(i < word.length() ? word.charAt(i) : " ");
+	            while (sb.charAt(sb.length() - 1) == ' ')
+	                sb.deleteCharAt(sb.length() - 1); // remove trailing space.
+	            ans.add(sb.toString());
+	        }
+	        return ans;
+	    }
+	 
+	 public static void main(String args[] ) {
+		 Scanner sc = new Scanner(System.in);
+			String str=sc.nextLine();
+		    System.out.println(printVertically(str));
+	}
+
+}
