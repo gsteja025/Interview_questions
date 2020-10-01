@@ -3,6 +3,7 @@ using namespace std;
   
 int main() 
 { 
+    ios_base::sync_with_stdio(false); //Makes Input and output fast.
     string a = "Geeks"; 
     string b = "function"; 
     cout << "Value of a before: " << a << endl; 
