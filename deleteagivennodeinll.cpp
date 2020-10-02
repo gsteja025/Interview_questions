@@ -91,6 +91,7 @@ void printList(Node *head)
 /* Driver code */
 int main()  
 {  
+    ios_base::sync_with_stdio(false);
     Node *head = NULL;  
   
     /* Create following linked list  
