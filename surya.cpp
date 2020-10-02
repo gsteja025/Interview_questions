@@ -4,6 +4,7 @@ using namespace std;
 int main() 
 { 
     ios_base::sync_with_stdio(false);
+    cin_tie(false);
     string a = "Geeks"; 
     string b = "function"; 
     cout << "Value of a before: " << a << endl; 
