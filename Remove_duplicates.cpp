@@ -36,3 +36,5 @@ int main()
    cout << removeDuplicate(str, n); 
    return 0; 
 } 
+/*Another method of solving this is using map i,e key and value pairs.
+Count the number of times each character repeated.Then,remove all the characters with map value >1. So now we can remove all the duplicates.
