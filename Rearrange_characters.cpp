@@ -79,6 +79,7 @@ void rearrangeString(string str)
 // Driver program to test above function 
 int main() 
 { 
+  ios_base::sync_with_stdio(false);
     string str = "bbbaa" ; 
     rearrangeString(str); 
     return 0; 
