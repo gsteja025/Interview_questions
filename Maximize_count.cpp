@@ -51,6 +51,7 @@ int CtSubarr(int arr[], int N, int K)
 // Driver Code 
 int main() 
 { 
+  ios_base::sync_with_stdio(false);
     int arr[] = { -2, 6, 6, 3, 5, 4, 1, 2, 8 }; 
     int N = sizeof(arr) / sizeof(arr[0]); 
     int K = 10; 
