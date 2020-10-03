@@ -92,6 +92,7 @@ void printList(Node *head)
 int main()  
 {  
     ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     Node *head = NULL;  
   
     /* Create following linked list  
