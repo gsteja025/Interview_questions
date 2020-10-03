@@ -31,6 +31,7 @@ char *removeDuplicate(char str[], int n)
 // Driver code 
 int main() 
 { 
+  ios_base::sync_with_stdio(0);
    char str[]= "geeksforgeeks"; 
    int n = sizeof(str) / sizeof(str[0]); 
    cout << removeDuplicate(str, n); 
