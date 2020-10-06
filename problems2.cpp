@@ -28,6 +28,8 @@ void longestAlternating(int arr[], int n)
 // Driver code 
 int main() 
 { 
+  
+    ios_base::sync_with_stdio(false);
     int a[] = { -5, -1, -1, 2, -2, -3 }; 
     int n = sizeof(a) / sizeof(a[0]); 
     longestAlternating(a, n); 
