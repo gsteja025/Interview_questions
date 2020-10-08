@@ -59,8 +59,7 @@ void printList(struct Node *ptr)
   
 // Driver Code 
 int main()  
-{  
-    // Start with the empty list
+{ 
     
     //cin_tie(false)
     ios_base::sync_with_stdio(false);
